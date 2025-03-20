@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="container"> <!--Class  1-   Used font-awasome and  cdn--->
+<h1>Currency Converter</h1>
+   
+<form>
+    <!---Amount-->
+   <div class="amount">
+   <p> Enter  Amount</p>
+   <input type="text" value="1" name="number" />
+   </div>
+    <!--Drop Down//  From //and  //TO -->
+    <!--From-->
+    <div class="dropdown">
+    <div class="from">
+    <p> Select From  </p>
+    
+    <!--Select -->
+    <div class="select-container">
+    <img src="https://flagsapi.com/US/flat/64.png"><!--NP,EU,US-->
+
+    <select name="from">
+   <!---<option value="INR"> INR</option>India-->
+    <!-- <option value="USD"> USD </option>Amarica -->
+    <!-- <option value="AFN"> EU</option>AFGANISTAN -->
+    <!-- <option value="AUD">AUD</option>Australia --> 
+    </select> 
+    </div>  
+    </div>  
+    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+    <!--To--> 
+
+    <div class="to"> 
+
+        <p> Select TO  </p>
+        <!--Select -->
+        <div class="select-container">
+        <img src="https://flagsapi.com/IN/flat/64.png"><!--NP,EU,US-->
+    
+        <select name="to">
+            <!-- <option  value="INR" selected> INR</option>India -->
+            <!-- <option value="USD"> USD </option>Amarica -->
+            <!-- <option  value="AFN"> EU</option>AFGANISTAN -->
+            <!-- <option value="AUD">AUD</option>Australia -->
+        </select> 
+        </div> <!-- select container closed-->
+        </div> <!--To closed-->
+       </div> <!--Drop down closed-->
+
+       <!--Message -->
+        <div class="msg"><b>1USID = 80INR</b> </div>
+   <button class="form-button"> Get Exchange rate</button>
+</form>
+</div>   <!--Class  1 clossed-->
+
+   
+<script src="Currencycode.js"></script>
+<script src="CurrencyProject.js"></script>
+</body>
+</html>
